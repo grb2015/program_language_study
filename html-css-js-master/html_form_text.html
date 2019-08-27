@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<!-- <div style="color:#00FF00"> -->
+
+             <!--- 右侧属性栏 begin ---------------------------------------------------------------------------------------------- -->
+             <div>
+                    <!-- <form> -->
+                            <!--- 位置属性 -->
+                            Position: <input type="text" id="X">  <input type="text" id="Y">
+                            <br><br>
+                            <!--- 缩放属性 -->
+                            Scale: <input type="checkbox" id="Scale_checkbox"> <input type="text" id="X_scalue" value = "1">  <input type="text" id="Y_scalue" value = "1">
+                            <br><br>
+                            <!--- 旋转属性(顺时针旋转角度) -->
+                            Rotation: <input type="text" id="RotationClockwise" value = "0">   
+                            
+                        <!-- </form> -->
+                        <br>
+                        <!--- 事件的下拉框 -->
+                        <select id="Event1"> 
+                            <option value ="saab">顺时针旋转</option> 
+                            <option value="opel">标签</option> 
+                            <option value="audi">显隐</option>
+                            <option value="audi">打开摄像机</option>
+                        </select>
+                        
+                        <input type="text" id="EventInputBox1" onchange = "EventInputBox1_Onchange(this.value)">
+                        <br><br>
+                        
+                        <select id="Event2"> 
+                            <option value ="saab">顺时针旋转</option> 
+                            <option value="opel">标签</option> 
+                            <option value="audi">显隐</option>
+                            <option value="audi">打开摄像机</option>
+                        </select>
+                            <!--- 事件的文本框 -->
+                        <input type="text" id="EventInputBox2" onchange = "EventInputBox2_Onchange(this.value)" >
+                        
+                        <br><br>
+                        <!--- 绑点Name -->
+                        Point Name : <input type="text" id="point_name" value = "未绑点">
+                        <br><br>
+                         <!--- 绑点的Tag -->
+                        Tag: <input type="text" id="Tag" value = "0">   
+                </div>
+             <!--- 右侧属性栏 END ---------------------------------------------------------------------------------------------- -->
+
+    <script>
+        setAttrById("X",99);
+        function setAttrById(id,value){
+            let pvalue = document.getElementById(id).value;
+            // console.log("pvalue = ");  // 为什么显示不出值来?
+            // console.log(document.getElementById(id));
+            document.getElementById(id).value = value;
+        }
+    </script>
+
+</body>
+</html>

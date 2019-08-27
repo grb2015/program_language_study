@@ -1,0 +1,6 @@
+## renbin.guo added 2017-9-02
+首先需要开启数据库
+service mysqld start
+然后
+python app.py即可
+

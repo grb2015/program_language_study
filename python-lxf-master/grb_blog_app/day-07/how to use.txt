@@ -1,0 +1,6 @@
+首先要确保mysql开启了
+
+service mysqld start
+
+
+然后python app.py 即可。

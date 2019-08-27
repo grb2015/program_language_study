@@ -1,0 +1,46 @@
+<!-- 注册用户的表单 
+用户名必须是3-10位英文字母或数字；
+口令必须是6-20位；
+两次输入口令必须一致。
+-->
+<form id="test-register" action="#" target="_blank" onsubmit="return checkRegisterForm()">
+    <p id="test-error" style="color:red"></p>
+    <p>
+        用户名: <input type="text" id="username" name="username">
+    </p>
+    <p>
+        口令: <input type="password" id="password" name="password">
+    </p>
+    <p>
+        重复口令: <input type="password" id="password-2">
+    </p>
+    <p>
+        <button type="submit">提交</button> <button type="reset">重置</button>
+    </p>
+</form>
+
+<script>
+    var checkRegisterForm = function () {   
+        var
+        username = document.getElementById('username'),
+        password = document.getElementById('password'),
+        password2 = document.getElementById('password-2'),
+        err = document.getElementById("test-error");
+        re1 = /^[\w\d]{3,10}$/;
+        re2 = /^.{6,20}$/;
+        if (!re1.test(username.value)) {
+            err.innerText = '用户名必须是3-10位英文字母或数字';
+            return false;
+        }
+        if (!re2.test(password.value)) {
+            err.innerText = '口令必须是6-20位';
+            return false;
+        }
+        if (password.value !== password2.value) {
+            err.innerText = '两次输入口令必须一致';
+            return false;
+        }   
+        console.log("#### call checkRegisterForm  ");
+        return true;
+    }
+</script>

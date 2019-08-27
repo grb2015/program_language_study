@@ -1,0 +1,11 @@
+使用的是CJSON :  https://github.com/DaveGamble/cJSON.gi
+使用非常简单,只要包含cJOSN.c 和 cJSON.h即可。
+
+如何编译:
+  gcc json_to_c.c  cJSON.c -o  json_to_c
+
+
+参考文件：
+http://www.cnblogs.com/liunianshiwei/p/6087596.html
+https://github.com/DaveGamble/cJSON#some-json
+
