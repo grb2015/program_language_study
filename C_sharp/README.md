@@ -7,3 +7,10 @@ C#也有key-value的键值对(Dictionary) ： https://www.w3cschool.cn/csharp/cs
 2. 如果要自己编译运行C#控制台程序怎么办?
 答：使用vscode 即可 
 参考 https://blog.csdn.net/qq_32216775/article/details/86146948
+
+
+
+3. visual studio 2019编辑器中，查找文件名（即像sublime 的ctrl+p快捷键那样）快捷键是什么?
+
+答：https://stackoverflow.com/questions/1508973/how-to-search-for-file-names-in-visual-studio
+    我使用ctrl+; 成功
