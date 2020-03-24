@@ -3,8 +3,8 @@
  * @Author: rbg
  * @CreateDate: Do not edit
  * @LastEditors: rbg
- * @LastEditTime: 2020-03-23 20:56:05
- * @detail: 
+ * @LastEditTime: 2020-03-24 11:37:22
+ * @detail:  疑问1:为什么导航的部分,中间有一条白线?
  -->
 <html>
 	<head>
@@ -33,6 +33,29 @@
 			</div>
 
 		</div>  <!---logo栏-->
+
+		<div style="width: 1000px;margin: 0 auto;height: 50px;background: url(../images/nav_bg.jpg);margin:3px auto">
+			<div style="float:left ;width: 670px;">  <!--这里必须加宽段,后面的搜索框会紧接着该div-->
+				<ul style="margin:0">   <!--li如何在ul里面垂直居中? 答: ul和li的上下margin都设置为0即可.-->
+					<li style="float:left; margin:0 5px ;list-style-type: none;font-size: 16px;">首页</li>  <!--list-style-type是取消掉li的图标  -->
+					<li style="float:left; margin:0 5px ;list-style-type: none;font-size: 16px;">关于慕课</li>
+					<li style="float:left; margin:0 5px ;list-style-type: none;font-size: 16px;">新闻动态</li>
+					<li style="float:left; margin:0 5px ;list-style-type: none;font-size: 16px;">课程中心</li>
+					<li style="float:left; margin:0 5px ;list-style-type: none;font-size: 16px;">在线课程</li>
+					<li style="float:left; margin:0 5px ;list-style-type: none;font-size: 16px;">人才招聘</li>
+				</ul>
+	
+			</div>  <!--导航栏左侧结束-->
+
+			<div style="float:right ; margin-right: 58px;">
+				<form>
+					<input type="text"  style="background: url(../images/search.jpg) no-repeat right center; height: 26px;
+					width: 190px; background-color: white;">
+				</form>
+			</div> <!--导航栏右侧搜索框结束-->
+
+		</div>
+
 		
 	</body>
 </html>
