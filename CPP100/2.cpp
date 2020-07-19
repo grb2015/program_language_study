@@ -7,10 +7,12 @@
 高于100万元时，超过100万元的部分按1%提成。
 从键盘输入当月利润I，求应发放奖金总数？
 */
-#include<iostream>
-using namespace std;
+#include<stdio.h>
 int main(){
-    float p=12; // 利润(万元)
+    float p ;
+    p = 12;
+    // scanf("%f",&p);
+
     float b;  // 奖金
     if(p<=10){
         b = p*0.1;
@@ -25,5 +27,6 @@ int main(){
     }else if(p>100){
         b = 10*0.1+(20-10)*0.075+(40-20)*0.05+(60-40)*0.03+(100-60)*0.015+(p-100)*0.01;
     }
-    printf("%f",b);
+    printf("提成为:%f",b);
 }
+
