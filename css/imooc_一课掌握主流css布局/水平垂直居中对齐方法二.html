@@ -1,0 +1,28 @@
+<!-- 
+    breif   :   水平垂直居中布局
+    history :   bg created 20201021 
+-->
+<style>
+    .body{
+        margin:0
+    }
+    .parent{
+        height:100px;
+        width:200px;
+        border:solid red;
+        position: relative;
+    }
+    .child{
+        border:solid red;
+        position:absolute;
+        /* transform: translateY(-50%);
+        transform: translateX(-50%); */  /* 写这么两个不行,只能用transform: translate(-50%,-50%); */
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 50%;
+        margin: 0;
+    }
+</style>
+<div class="parent">
+    <div class="child">垂直居中</div>
+</div>
